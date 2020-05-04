@@ -12,9 +12,9 @@ namespace EventHubsReceiverConApp
   class Program
   {
     private const string ehubNamespaceConnectionString = "Endpoint=sb://cbeventhub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=2S9+0XKerQRTrkPJrHz07Wa3LeBqfdn0nkQQyMPnWoM=";
-    private const string eventHubName = "Event Hub Name here";
-    private const string blobStorageConnectionString = "Storage Connection String";
-    private const string blobContainerName = "Container Name Here";
+    private const string eventHubName = "myeventhub1";
+    private const string blobStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=saforeventhub;AccountKey=FkbT+0Liav2iTSo0CZsEqJoUKnsXXk8KMdKgRUfKK/XfrsUFfDchqNR4ccJxILYS9NecijiRkRaxfdjComD5xQ==;EndpointSuffix=core.windows.net";
+    private const string blobContainerName = "cbcontainer";
     static async Task Main(string[] args)
     {
       // Read from the default consumer group: $Default
